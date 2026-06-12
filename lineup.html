@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Team Lineup</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #0f172a;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 900px;
+        background: #111827;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid gold;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 10px 0 20px;
+        font-size: 22px;
+        color: gold;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-left: 4px solid gold;
+        padding-left: 10px;
+    }
+
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    li {
+        background: #1f2937;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    li:hover {
+        background: gold;
+        color: #000;
+    }
+
+    .manager {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background: #1f2937;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (min-width: 600px) {
+        ul {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 900px) {
+        ul {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TEAM LOGO -->
+    <div class="logo">
+        <img src="logo.jpg" alt="Team Logo">
+    </div>
+
+    <h1>Future Star Squad List</h1>
+
+    <!-- STARTING 11 -->
+    <div class="section">
+        <h2>Starting 11</h2>
+        <ul>
+            <li>GK: </li>
+            <li>RB: </li>
+            <li>CB: </li>
+            <li>CB: </li>
+            <li>LB: </li>
+            <li>RM: </li>
+            <li>DM: </li>
+            <li>LM: </li>
+            <li>RW: </li>
+            <li>CF: </li>
+            <li>LW: </li>
+        </ul>
+    </div>
+
+    <!-- SUBSTITUTES -->
+    <div class="section">
+        <h2>Substitutes</h2>
+        <ul>
+            <li>Sub 1:</li>
+            <li>Sub 2:</li>
+            <li>Sub 3:</li>
+            <li>Sub 4:</li>
+            <li>Sub 5:</li>
+        </ul>
+    </div>
+
+
+ <div class="manager">
+        Future Star Vs 
+    </div>
+ <div class="manager">
+        Venue 🏟️:
+    </div>
+ <div class="manager">
+        Time ⏰:
+    </div>
+
+
+    <!-- MANAGER -->
+    <div class="manager">
+        Manager: Liman Yahaya
+    </div>
+<div class="manager">
+        Assistant: Hassan Sarki
+    </div>
+
+</div>
+
+</body>
+</html>

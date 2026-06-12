@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 2px solid gold;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-section img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.logo-section h2 {
+    color: gold;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover  {
+    color: gold;
+}
+.nav-links a.active {
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url('team.jpg') center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    color: gold;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* BUTTONS */
+.btn,
+.btn-outline {
+    padding: 14px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.btn {
+    background: gold;
+    color: black;
+}
+
+.btn-outline {
+    border: 2px solid gold;
+    color: gold;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    color: gold;
+    margin-bottom: 30px;
+}
+
+/* FEATURES */
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.feature-box {
+    background: #111;
+    padding: 30px;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+/* LEADERSHIP */
+.leaders {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.leader-card {
+    background: #111;
+    border: 2px solid gold;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: gold;
+    color: black;
+}
+
+.stat-box h2 {
+    color: black;
+}
+
+/* CTA */
+.cta {
+    background: #111;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid gold;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

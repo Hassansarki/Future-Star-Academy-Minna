@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: white;
+    overflow-x:hidden;
+    width:100%;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gold;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-section img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo-section h2 {
+    color: gold;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+.nav-links a.active {
+    color: gold;
+}
+
+/* HERO */
+.contact-hero {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    color: gold;
+    font-size: 50px;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 60px 10%;
+}
+
+.info-box {
+    background: #111;
+    border: 2px solid gold;
+    padding: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.info-box h2 {
+    margin-bottom: 15px;
+    color: gold;
+}
+
+.info-box p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+/* SOCIAL */
+.social-section {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    min-height: 48px;
+    line-height: 18px;
+    transition: opacity 0.3s ease;
+    transform: none !important;
+}
+
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:active {
+    opacity: 0.85;
+    transform: none !important;
+}
+
+.instagram {
+    background: #E1306C;
+    color: white;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.email {
+    background: gold;
+    color: black;
+}
+
+/* FORM */
+.form-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 2px solid gold;
+    background: #111;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    background: gold;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid gold;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .contact-hero h1 {
+        font-size: 35px;
+    }
+}
